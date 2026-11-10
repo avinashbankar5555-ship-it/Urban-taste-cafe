@@ -248,6 +248,96 @@ footer a {
     }
 
       }
+      /* PREMIUM 3D WEBSITE DESIGN */
+
+body {
+    background: linear-gradient(135deg, #fff8ed, #ffe0b2);
+    perspective: 1200px;
+}
+
+/* 3D NAVIGATION */
+
+nav {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-radius: 0 0 18px 18px;
+    transform: translateZ(20px);
+}
+
+/* 3D HERO SECTION */
+
+.hero {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    padding: 60px 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #3e2723, #8d4b25);
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    transform: translateZ(50px);
+    text-shadow: 3px 5px 10px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    transform: translateZ(30px);
+}
+
+/* 3D FOOD CARDS */
+
+.food-card {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    background: linear-gradient(145deg, #ffffff, #f1e4d5);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.food-card h3,
+.food-card p,
+.food-card img {
+    transform: translateZ(20px);
+}
+
+.food-card img {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+    .food-card:hover {
+        transform: translateY(-12px) rotateX(5deg);
+        box-shadow: 0 25px 40px rgba(0,0,0,0.25);
+    }
+
+    .food-card:hover img {
+        transform: translateZ(35px) scale(1.04);
+    }
+}
+
+/* 3D ORDER BUTTONS */
+
+.order-btn {
+    box-shadow: 0 6px 0 #147c42;
+    transition: all 0.2s ease;
+}
+
+.order-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #147c42;
+}
+
+/* PREMIUM SECTION SHADOWS */
+
+section {
+    border-radius: 18px;
+    margin: 20px 10px;
+      }
   </style>
 
     <h1>Welcome to Urban Taste Cafe</h1>
